@@ -14,7 +14,6 @@ function startTime() {
   document.getElementById('h').innerHTML = h + ":";
   document.getElementById('m').innerHTML = m + ":";
   document.getElementById('s').innerHTML = s;
-  //document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
 
   const hour = document.getElementById('t');

@@ -192,12 +192,6 @@ h1 {
   margin-bottom: .3rem;
 }
 
-/* .content-nogrid {
-  display: grid;
-  grid-template-columns: 25% 71%;
-  margin-top: 7rem;
-} */
-
 .content-nogrid .grid1-employee img {
   display: block;
   margin: 0 auto;
