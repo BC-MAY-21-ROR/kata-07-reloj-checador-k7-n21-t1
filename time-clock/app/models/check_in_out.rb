@@ -1,0 +1,2 @@
+class CheckInOut < ApplicationRecord
+end
