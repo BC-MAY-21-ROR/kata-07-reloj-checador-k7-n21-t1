@@ -1,2 +1,0 @@
-class CheckInOut < ApplicationRecord
-end

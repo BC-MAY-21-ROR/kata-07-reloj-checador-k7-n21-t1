@@ -1,2 +1,0 @@
-class Branch < ApplicationRecord
-end
