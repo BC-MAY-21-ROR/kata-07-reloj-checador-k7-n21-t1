@@ -3,21 +3,13 @@
 one:
   name: MyString
   position: MyString
-  branch_id: 1
-  private_number: 1
   email: MyString
-  check_in_out_id: 1
   active: false
-  belongs_to: 
-  belongs_to: 
+  branch: one
 
 two:
   name: MyString
   position: MyString
-  branch_id: 1
-  private_number: 1
   email: MyString
-  check_in_out_id: 1
   active: false
-  belongs_to: 
-  belongs_to: 
+  branch: two
