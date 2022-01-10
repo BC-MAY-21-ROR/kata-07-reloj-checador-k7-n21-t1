@@ -13,6 +13,7 @@
   <title>Reloj checador</title>
 </head>
 <body>
+  
   <div class="card">
     <header id="header">
       <div class="header-content">
@@ -31,7 +32,19 @@
       <center>
         <h2 class="title_grid">Employees</h2>
         <div>
-          <table id="table_employee" class="grid">
+        <!--<%= @empleado.name %>-->
+
+        
+
+        <%@empleado.each do |reg|%>
+          <font color="white">
+            <li><%= reg.name%></li>
+            <li><%= reg.branch.name%></li>
+          </font>
+        <%end%>
+
+
+          <table id="table_employee" class="grid" hidden>
             <thead>
               <th>Name</th>
               <th>Position</th>
