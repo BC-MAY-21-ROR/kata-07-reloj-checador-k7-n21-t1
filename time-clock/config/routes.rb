@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
     get 'index', to: 'index#index'
-    get 'layouts/admin', to: 'layouts#admin'
-    get 'layouts/branches', to: 'layouts#branches'
-    get 'layouts/employees', to: 'layouts#employees'
+    get 'pages/admin', to: 'pages#admin'
+    get 'pages/branches', to: 'pages#branches'
+    get 'pages/employees', to: 'pages#employees'
 end
