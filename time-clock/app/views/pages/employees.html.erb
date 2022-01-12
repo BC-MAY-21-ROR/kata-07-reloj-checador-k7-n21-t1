@@ -1,0 +1,119 @@
+<center>
+<h1>Listado de empleados</h1>
+ <table style="color:yellow; background-color:#00000059;" id="example" >
+  <tr>
+    <% @employees_list.each do |reg|%>
+    <thead style="color:green;">
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Position</th>
+      <th>Email</th>
+      <th>Active</th>
+      <th>branch_id</th>
+      <th>creted_at</th>
+      <th>updated_at</th>
+    </thead>
+  </tr>
+  <tr>
+    <td><%=reg.id %></td>
+    <td><%=reg.name %></td>
+    <td><%=reg.position %></td>
+    <td><%=reg.email %></td>
+    <td><%=reg.active %></td>
+    <td><%=reg.branch_id %></td>
+    <td><%=reg.created_at %></td>
+    <td><%=reg.updated_at %></td>
+
+    <td>
+      <button><%=link_to "Editar", edit_employee_path(reg.id)%></button>
+      <button><%=link_to "Desactivar", reg, method: :delete,data: { confirm: "Deseas desactivar este Empleado?"}  %></button>
+    </td>
+  </tr>
+   <% end%>
+</table>
+<button><%=link_to "Add Employee", pages_employees_new_path%></button>
+</center>
+
+
+
+<div class="card" hidden>
+  <header id="header">
+    <div class="header-content">
+      <div class="dot">
+        <%= image_tag ("dot_image"), :class => "dot-img" %>
+      </div>
+      <div class="title">
+        <h1>Check in/out</h1>
+      </div>
+      <a href="/index.html">Home</a>
+      <a href="#">Generate report</a>
+    </div>
+  </header>
+  <div class="content-nogrid content">
+    <div id="arrow_left"><i class="fas fa-chevron-left"></i></div>
+    <center>
+      <h2 class="title_grid">Employees</h2>
+      <div>
+        <table id="table_employee" class="grid">
+          <thead>
+            <th>Name</th>
+            <th>Position</th>
+            <th>#Employee</th>
+            <th>E-mail</th>
+            <th>Private number</th>
+            <th>Branch</th>
+            <th>Actions</th>
+          </thead>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+        </table>
+      </div>
+      <button id="add_employee" class="buttons-style"> <i class="fas fa-user-plus"></i>ADD EMPLOYEE</button>
+    </center>
+    <div id="arrow_right"><i class="fas fa-chevron-right"></i></div>
+  </div>
+</div>
+<%= javascript_pack_tag 'datatables-scripts' %>

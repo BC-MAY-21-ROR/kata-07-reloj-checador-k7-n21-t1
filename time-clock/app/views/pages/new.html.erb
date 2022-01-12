@@ -1,0 +1,42 @@
+<center>
+    <%= form_for @employee do |f|%>
+        <div>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+        </div>
+
+        <div>
+            <%= f.label :position %>
+            <%= f.text_field :position %>
+        </div>
+        <div>
+            <%= f.label :email %>
+            <%= f.text_field :email %>
+        </div>
+
+        <div>
+            <%= f.label :active %>
+            <%= f.text_field :active %>
+        </div>
+
+        <div>
+            <%= f.label :branch_id %>
+            <%= f.text_field :branch_id %>
+        </div>
+
+        <div>
+            <%= f.label :created_at %>
+            <%= f.text_field :created_at %>
+        </div>
+
+        <div>
+            <%= f.label :updated_at %>
+            <%= f.text_field :updated_at %>
+        </div>
+
+        <div>
+            <%= f.submit %>
+        </div>
+
+    <%end%>
+</center>
