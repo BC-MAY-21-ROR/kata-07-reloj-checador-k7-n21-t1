@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  root to: 'index#index'
+  get 'pages/admin', to: 'pages#admin'
+  get 'pages/branches', to: 'pages#branches'
+  get 'pages/employees', to: 'pages#employees'
 end

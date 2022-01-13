@@ -1,0 +1,30 @@
+<div class="card">
+  <header id="header">
+    <div class="header-content">
+      <div class="dot">
+        <%= image_tag ("dot_image.png"), :class => "dot-img" %>
+      </div>
+      <div class="title">
+        <h1>Check in/out</h1>
+      </div>     
+      <%= link_to 'Home', '/' %>
+      <%= link_to 'Admin', "/pages/admin" %>
+      <a href="#">Generate reports</a>
+    </div>
+  </header>
+  <div id="login_admin" class="content-nogrid content">
+    <div class="grid1-employee">
+      <%= image_tag ("account_circle.png"), :class => "employee-img", :alt => "user image" %>
+      <div id="form">
+        <form action="">
+          <input placeholder="Username" type="text">
+          <input placeholder="Password" type="password">
+          <div class="button-admin">
+            <button type="submit">LOG IN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
