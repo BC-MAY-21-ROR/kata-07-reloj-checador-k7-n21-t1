@@ -1,10 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
     get 'index', to: 'index#index'
-<<<<<<< Updated upstream
-    get 'layouts/admin', to: 'layouts#admin'
-    get 'layouts/branches', to: 'layouts#branches'
-    get 'layouts/employees', to: 'layouts#employees'
-=======
     get 'pages/admin', to: 'pages#admin'
     get 'pages/branches', to: 'pages#branches'
     get 'pages/employees', to: 'pages#employees'
@@ -19,6 +15,5 @@ Rails.application.routes.draw do
     #para descativar un employee
     get 'employees/:id', to: 'pages#disable'
     resources :employees
-
->>>>>>> Stashed changes
+    root to: "index#index"
 end

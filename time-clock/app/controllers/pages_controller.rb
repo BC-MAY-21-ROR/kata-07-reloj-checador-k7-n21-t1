@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+    before_action :authenticate_user!
     def employees
         @employees_list = Employee.all
     end
