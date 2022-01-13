@@ -1,3 +1,4 @@
+//FOR DEVELOPMENT
 default: &default
   adapter: sqlite3
   user: <%= ENV['DATABASE_USER'] %>
@@ -15,4 +16,22 @@ test:
 
 production:
   database: <%= ENV['DATABASE_URL'] %> 
+  database: <%= ENV['DATABASE_URL'] %>
+
+//FOR PRODUCTION
+default: &default
+  adapter: postgresql
+  user: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PW'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+  <<: *default
+  database: <%= ENV['DATABASE_DEVELOPMENT'] %>
+test:
+  <<: *default
+  database: <%= ENV['DATABASE_TEST'] %>
+production:
   database: <%= ENV['DATABASE_URL'] %>
