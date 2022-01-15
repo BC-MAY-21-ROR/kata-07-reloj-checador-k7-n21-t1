@@ -348,7 +348,7 @@ select > option {
     justify-content: center;
     font-weight: 700;
     color: $textColor;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 }
 
@@ -372,12 +372,37 @@ select > option {
   }
 }
 
-.signup {
-  
-}
-
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.alert {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  text-align: center;
+  color: #D24D57;
+  font-weight: 700;
+}
+
+.notice {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  text-align: center;
+  color: #a8f1c6;
+  font-weight: 700;
+}
+
+.em-text {
+  color: $textColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rememberme {
+  margin-bottom: 2rem;
 }
