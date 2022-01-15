@@ -1,6 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   entrance: 2022-01-05 20:06:35
   out: 2022-01-05 20:06:35
   employee: one
@@ -8,4 +9,13 @@ one:
 two:
   entrance: 2022-01-05 20:06:35
   out: 2022-01-05 20:06:35
+=======
+  entrance: 2022-01-06 17:27:09
+  out: 2022-01-06 17:27:09
+  employee: one
+
+two:
+  entrance: 2022-01-06 17:27:09
+  out: 2022-01-06 17:27:09
+>>>>>>> e5c6800 (views and database)
   employee: two
