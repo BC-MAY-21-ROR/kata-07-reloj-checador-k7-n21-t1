@@ -1,13 +1,63 @@
+<<<<<<< HEAD
 <div class="card">
   <header id="header">
     <div class="header-content">
       <div class="dot">
         <%= image_tag ("dot_image.png"), :class => "dot-img" %>
+=======
+<center>
+<h1>Listado de empleados</h1>
+ <table style="color:yellow; background-color:#00000059;" id="example" >
+  <tr>
+    <% @employees_list.each do |reg|%>
+    <thead style="color:green;">
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Position</th>
+      <th>Email</th>
+      <th>Active</th>
+      <th>branch_id</th>
+      <th>creted_at</th>
+      <th>updated_at</th>
+    </thead>
+  </tr>
+  <tr>
+    <td><%=reg.id %></td>
+    <td><%=reg.name %></td>
+    <td><%=reg.position %></td>
+    <td><%=reg.email %></td>
+    <td><%=reg.active %></td>
+    <td><%=reg.branch_id %></td>
+    <td><%=reg.created_at %></td>
+    <td><%=reg.updated_at %></td>
+
+    <td>
+      <button><%=link_to "Editar", edit_employee_path(reg.id)%></button>
+      <button><%=link_to "Desactivar", reg, method: :delete,data: { confirm: "Deseas desactivar este Empleado?"}  %></button>
+    </td>
+  </tr>
+   <% end%>
+</table>
+<button><%=link_to "Add Employee", pages_employees_new_path%></button>
+</center>
+
+
+
+<div class="card" hidden>
+  <header id="header">
+    <div class="header-content">
+      <div class="dot">
+        <%= image_tag ("dot_image"), :class => "dot-img" %>
+>>>>>>> 32d35a8 (the coppy more recient)
       </div>
       <div class="title">
         <h1>Check in/out</h1>
       </div>
+<<<<<<< HEAD
       <%= link_to 'Home', '/' %>
+=======
+      <a href="/index.html">Home</a>
+>>>>>>> 32d35a8 (the coppy more recient)
       <a href="#">Generate report</a>
     </div>
   </header>
@@ -35,6 +85,45 @@
             <td>Branch 1</td>
             <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
           </tr>
+<<<<<<< HEAD
+=======
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+          <tr class="register">
+            <td>Marcelo</td>
+            <td>Developer</td>
+            <td>26359</td>
+            <td>marck_@hotmail.com</td>
+            <td>312-111-11-55</td>
+            <td>Branch 1</td>
+            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+          </tr>
+>>>>>>> 32d35a8 (the coppy more recient)
         </table>
       </div>
       <button id="add_employee" class="buttons-style"> <i class="fas fa-user-plus"></i>ADD EMPLOYEE</button>
@@ -42,4 +131,8 @@
     <div id="arrow_right"><i class="fas fa-chevron-right"></i></div>
   </div>
 </div>
+<<<<<<< HEAD
 
+=======
+<%= javascript_pack_tag 'datatables-scripts' %>
+>>>>>>> 32d35a8 (the coppy more recient)
