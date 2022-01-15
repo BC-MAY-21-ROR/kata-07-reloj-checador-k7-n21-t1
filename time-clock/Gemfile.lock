@@ -87,18 +87,7 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.10.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     ffi (1.15.4)
-=======
->>>>>>> e5c6800 (views and database)
-=======
-    ffi (1.15.4)
->>>>>>> ce9ff4c (Adding the db)
-=======
-    ffi (1.15.4)
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
     ffi (1.15.4-x64-mingw32)
     globalid (1.0.0)
       activesupport (>= 5.0)
@@ -123,32 +112,21 @@ GEM
     msgpack (1.4.2)
     nio4r (2.5.8)
     nokogiri (1.12.5-x64-mingw32)
-<<<<<<< HEAD
-<<<<<<< HEAD
       racc (~> 1.4)
-<<<<<<< HEAD
     nokogiri (1.12.5-x86_64-darwin)
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
-=======
->>>>>>> e5c6800 (views and database)
       racc (~> 1.4)
     pg (1.2.3)
-=======
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
-<<<<<<< HEAD
     parslet (2.0.0)
->>>>>>> ce9ff4c (Adding the db)
-=======
     orm_adapter (0.5.0)
->>>>>>> c4cabd3 (backup with devise)
-=======
       racc (~> 1.4)
     nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
+
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
@@ -202,11 +180,8 @@ GEM
       ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
-<<<<<<< HEAD
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
     sassc-rails (2.1.2)
       railties (>= 4.0.0)
       sassc (>= 2.0)
@@ -261,13 +236,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
-<<<<<<< HEAD
-<<<<<<< HEAD
   x86_64-darwin-20
-=======
->>>>>>> e5c6800 (views and database)
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
   x86_64-linux
 
 DEPENDENCIES
@@ -277,10 +246,9 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.7)
   listen (~> 3.3)
-<<<<<<< HEAD
+
   pg
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
+
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.4)
@@ -288,10 +256,9 @@ DEPENDENCIES
   selenium-webdriver
   spring
   sqlite3 (~> 1.4)
-<<<<<<< HEAD
+  
   stimulus-rails
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
+
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)

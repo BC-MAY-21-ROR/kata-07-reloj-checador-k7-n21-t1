@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<div class="card">
-  <header id="header">
-    <div class="header-content">
-      <div class="dot">
-        <%= image_tag ("dot_image.png"), :class => "dot-img" %>
-=======
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
 <center>
 <h1>Listado de empleados</h1>
- <table style="color:yellow; background-color:#00000059;" id="example" hidden>
+ <table style="color:yellow; background-color:#00000059;" id="example">
   <tr>
     <% @employees_list.each do |reg|%>
     <thead style="color:green;">
@@ -33,7 +23,6 @@
     <td><%=reg.branch_id %></td>
     <td><%=reg.created_at %></td>
     <td><%=reg.updated_at %></td>
-
     <td>
       <button><%=link_to "Editar", edit_employee_path(reg.id)%></button>
       <button><%=link_to "Desactivar", reg, method: :delete,data: { confirm: "Deseas desactivar este Empleado?"}  %></button>
@@ -43,31 +32,16 @@
 </table>
 <button><%=link_to "Add Employee", pages_employees_new_path%></button>
 </center>
-
-
-
-<div class="card" hidden>
+<div class="card" >
   <header id="header">
     <div class="header-content">
       <div class="dot">
         <%= image_tag ("dot_image"), :class => "dot-img" %>
-<<<<<<< HEAD
->>>>>>> 32d35a8 (the coppy more recient)
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
       </div>
       <div class="title">
         <h1>Check in/out</h1>
       </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
       <%= link_to 'Home', '/' %>
-=======
-      <a href="/index.html">Home</a>
->>>>>>> 32d35a8 (the coppy more recient)
-=======
-      <a href="/index.html">Home</a>
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
       <a href="#">Generate report</a>
     </div>
   </header>
@@ -95,51 +69,6 @@
             <td>Branch 1</td>
             <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
           </tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
-          <tr class="register">
-            <td>Marcelo</td>
-            <td>Developer</td>
-            <td>26359</td>
-            <td>marck_@hotmail.com</td>
-            <td>312-111-11-55</td>
-            <td>Branch 1</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          <tr class="register">
-            <td>Marcelo</td>
-            <td>Developer</td>
-            <td>26359</td>
-            <td>marck_@hotmail.com</td>
-            <td>312-111-11-55</td>
-            <td>Branch 1</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          <tr class="register">
-            <td>Marcelo</td>
-            <td>Developer</td>
-            <td>26359</td>
-            <td>marck_@hotmail.com</td>
-            <td>312-111-11-55</td>
-            <td>Branch 1</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          <tr class="register">
-            <td>Marcelo</td>
-            <td>Developer</td>
-            <td>26359</td>
-            <td>marck_@hotmail.com</td>
-            <td>312-111-11-55</td>
-            <td>Branch 1</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-<<<<<<< HEAD
->>>>>>> 32d35a8 (the coppy more recient)
-=======
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
         </table>
       </div>
       <button id="add_employee" class="buttons-style"> <i class="fas fa-user-plus"></i>ADD EMPLOYEE</button>
@@ -147,16 +76,3 @@
     <div id="arrow_right"><i class="fas fa-chevron-right"></i></div>
   </div>
 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
-<%= javascript_pack_tag 'datatables-scripts' %>
->>>>>>> 32d35a8 (the coppy more recient)
-=======
-
->>>>>>> c4cabd3 (backup with devise)
-=======
-
->>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
