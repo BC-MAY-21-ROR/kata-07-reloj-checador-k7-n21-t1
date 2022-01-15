@@ -2,6 +2,7 @@
 
 one:
 <<<<<<< HEAD
+<<<<<<< HEAD
   entrance: 2022-01-05 20:06:35
   out: 2022-01-05 20:06:35
   employee: one
@@ -18,4 +19,13 @@ two:
   entrance: 2022-01-06 17:27:09
   out: 2022-01-06 17:27:09
 >>>>>>> e5c6800 (views and database)
+=======
+  entrance: 2022-01-05 20:06:35
+  out: 2022-01-05 20:06:35
+  employee: one
+
+two:
+  entrance: 2022-01-05 20:06:35
+  out: 2022-01-05 20:06:35
+>>>>>>> c4cabd3 (backup with devise)
   employee: two

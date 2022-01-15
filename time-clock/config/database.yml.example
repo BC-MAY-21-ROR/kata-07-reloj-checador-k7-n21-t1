@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //FOR DEVELOPMENT
+=======
+>>>>>>> c4cabd3 (backup with devise)
 default: &default
   adapter: sqlite3
   user: <%= ENV['DATABASE_USER'] %>
@@ -17,6 +20,7 @@ test:
 production:
   database: <%= ENV['DATABASE_URL'] %> 
   database: <%= ENV['DATABASE_URL'] %>
+<<<<<<< HEAD
 
 //FOR PRODUCTION
 default: &default
@@ -35,3 +39,5 @@ test:
   database: <%= ENV['DATABASE_TEST'] %>
 production:
   database: <%= ENV['DATABASE_URL'] %>
+=======
+>>>>>>> c4cabd3 (backup with devise)

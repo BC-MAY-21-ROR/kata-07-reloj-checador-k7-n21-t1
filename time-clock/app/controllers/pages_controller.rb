@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+    before_action :authenticate_user!
+>>>>>>> c4cabd3 (backup with devise)
     def employees
         @employees_list = Employee.all
     end
