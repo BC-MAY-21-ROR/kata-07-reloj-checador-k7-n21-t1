@@ -22,6 +22,10 @@ test:
 
 production:
   <<: *default
+<<<<<<< HEAD
   adapter: postgresql
   database: database_production
   timeout: 5000
+=======
+  database: db/production.sqlite3
+>>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda

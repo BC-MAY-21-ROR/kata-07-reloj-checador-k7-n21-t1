@@ -1,10 +1,14 @@
 class PagesController < ApplicationController
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
     before_action :authenticate_user!
 >>>>>>> c4cabd3 (backup with devise)
+=======
+    before_action :authenticate_user!
+>>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
     def employees
         @employees_list = Employee.all
     end
@@ -47,5 +51,8 @@ class PagesController < ApplicationController
         def employee_params
             params.require(:employee).permit(:name, :position, :email, :active, :branch_id, :created_at, :updated_at)
         end
+<<<<<<< HEAD
 >>>>>>> 32d35a8 (the coppy more recient)
+=======
+>>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
 end
