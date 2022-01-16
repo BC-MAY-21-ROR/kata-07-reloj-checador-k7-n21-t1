@@ -1,0 +1,28 @@
+<center>
+    <%= form_for @branch do |f|%>
+        <div>
+            <%= f.label :name %>
+            <%= f.text_field :name %>
+        </div>
+
+        <div>
+            <%= f.label :direction %>
+            <%= f.text_field :direction %>
+        </div>
+
+        <div>
+            <%= f.label :created_at %>
+            <%= f.text_field :created_at %>
+        </div>
+
+        <div>
+            <%= f.label :updated_at %>
+            <%= f.text_field :updated_at %>
+        </div>
+
+        <div>
+            <%= f.submit %>
+        </div>
+
+    <%end%>
+</center>

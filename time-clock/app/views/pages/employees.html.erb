@@ -1,37 +1,3 @@
-<center>
-<h1>Listado de empleados</h1>
- <table style="color:yellow; background-color:#00000059;" id="example">
-  <tr>
-    <% @employees_list.each do |reg|%>
-    <thead style="color:green;">
-      <th>Id</th>
-      <th>Nombre</th>
-      <th>Position</th>
-      <th>Email</th>
-      <th>Active</th>
-      <th>branch_id</th>
-      <th>creted_at</th>
-      <th>updated_at</th>
-    </thead>
-  </tr>
-  <tr>
-    <td><%=reg.id %></td>
-    <td><%=reg.name %></td>
-    <td><%=reg.position %></td>
-    <td><%=reg.email %></td>
-    <td><%=reg.active %></td>
-    <td><%=reg.branch_id %></td>
-    <td><%=reg.created_at %></td>
-    <td><%=reg.updated_at %></td>
-    <td>
-      <button><%=link_to "Editar", edit_employee_path(reg.id)%></button>
-      <button><%=link_to "Desactivar", reg, method: :delete,data: { confirm: "Deseas desactivar este Empleado?"}  %></button>
-    </td>
-  </tr>
-   <% end%>
-</table>
-<button><%=link_to "Add Employee", pages_employees_new_path%></button>
-</center>
 <div class="card" >
   <header id="header">
     <div class="header-content">
@@ -42,37 +8,41 @@
         <h1>Check in/out</h1>
       </div>
       <%= link_to 'Home', '/' %>
-      <a href="#">Generate report</a>
+      <%= link_to 'Reports', '/' %>
     </div>
   </header>
   <div class="content-nogrid content">
-    <div id="arrow_left"><i class="fas fa-chevron-left"></i></div>
+    <div id="arrow_left"><%=link_to ('<i class="fas fa-chevron-left"></i>').html_safe, pages_branches_path %></div>
     <center>
       <h2 class="title_grid">Employees</h2>
-      <div>
+      <div id="table_container">
         <table id="table_employee" class="grid">
           <thead>
             <th>Name</th>
             <th>Position</th>
             <th>#Employee</th>
             <th>E-mail</th>
-            <th>Private number</th>
             <th>Branch</th>
+            <th>Active</th>
             <th>Actions</th>
           </thead>
-          <tr class="register">
-            <td>Marcelo</td>
-            <td>Developer</td>
-            <td>26359</td>
-            <td>marck_@hotmail.com</td>
-            <td>312-111-11-55</td>
-            <td>Branch 1</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
+          <tbody>
+            <% @employees_list.each do |reg|%>
+              <tr class="register">
+                <td><%=reg.name %></td>
+                <td><%=reg.position %></td>
+                <td><%=reg.id %></td>
+                <td><%=reg.email %></td>
+                <td><%=reg.branch_id %></td>
+                <td><%= reg.active == false ? ('<font color="red">False</font>').html_safe : ('<font color="green">True</font>').html_safe %></td>
+                <td><%=link_to ('<i class="fas fa-pencil-alt"></i>').html_safe, edit_employee_path(reg.id)%> &nbsp; &nbsp;<%=link_to ('<i id="switch" class="fas fa-toggle-on"></i>').html_safe, reg, method: :delete,data: { confirm: "Deseas desactivar este Empleado?"}  %></td>
+              </tr>
+            <%end%>
+          </tbody>
         </table>
       </div>
-      <button id="add_employee" class="buttons-style"> <i class="fas fa-user-plus"></i>ADD EMPLOYEE</button>
+      <button id="add_employee" class="buttons-style"> <i class="fas fa-user-plus"></i><%=link_to "ADD EMPLOYEE", pages_employees_new_path%></button>
     </center>
-    <div id="arrow_right"><i class="fas fa-chevron-right"></i></div>
+    <div id="arrow_right"><%=link_to ('<i class="fas fa-chevron-right"></i>').html_safe, pages_branches_path %></div>
   </div>
 </div>

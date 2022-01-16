@@ -8,50 +8,32 @@
         <h1>Check in/out</h1>
       </div>
       <%= link_to 'Home', '/' %>
-      <a href="#">Generate report</a>
+      <%= link_to 'Reports', '/' %>
     </div>
   </header>
   <div class="content-nogrid content">
-    <div id="arrow_left"><i class="fas fa-chevron-left"></i></div>
+    <div id="arrow_left"><%=link_to ('<i class="fas fa-chevron-left"></i>').html_safe, pages_employees_path %></div>
     <center>
       <h2 class="title_grid">Branches</h2>
-      <div>
+      <div id="table_container">
         <table id="table_branches" class="grid">
           <thead>
             <th>Name</th>
             <th>Address</th>
             <th>Actions</th>
           </thead>
+          <%@branches_list.each do |reg|%>
           <tr class="register">
-            <td>North</td>
-            <td>Bugambilais #132, centro Colima Col.</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
+            <td><%= reg.name%></td>
+            <td><%= reg.direction%></td>
+            <td><center><%=link_to ('<i class="fas fa-pencil-alt"></i>').html_safe, edit_branch_path(reg.id)%></center></td>
           </tr>
-          <tr class="register">
-            <td>North</td>
-            <td>Bugambilais #132, centro Colima Col.</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          <tr class="register">
-            <td>North</td>
-            <td>Bugambilais #132, centro Colima Col.</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          <tr class="register">
-            <td>North</td>
-            <td>Bugambilais #132, centro Colima Col.</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
-          </tr>
-          <tr class="register">
-            <td>North</td>
-            <td>Bugambilais #132, centro Colima Col.</td>
-            <td><i class="fas fa-pencil-alt"></i> &nbsp; &nbsp;<i class="fas fa-toggle-on"></i></td>
-          </tr>
+          <%end%>
+          
         </table>
       </div>
-      <button id="add_branch" class="buttons-style"><i class="far fa-building"></i>ADD BRANCH</button>
+      <button id="add_branch" class="buttons-style"><i class="far fa-building"></i><%=link_to "ADD BRANCH", pages_branches_new_path%></button>
     </center>
-    <div id="arrow_right"><i class="fas fa-chevron-right"></i></div>
+    <div id="arrow_right"><%=link_to ('<i class="fas fa-chevron-right"></i>').html_safe, pages_employees_path %></div>
   </div>
 </div>

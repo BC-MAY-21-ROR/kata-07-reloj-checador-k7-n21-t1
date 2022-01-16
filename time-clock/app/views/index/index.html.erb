@@ -8,23 +8,24 @@
         <h1>Check in/out</h1>
       </div>
       <%= link_to 'Home', '/' %>
-      <%= link_to 'Admin', "/users/sign_in" %>
+      <%= link_to "Admin", "/users/sign_in" %>
+      
     </div>
   </header>
 <div class="content-grid content">
     <div class="grid1-employee">
       <%= image_tag ("account_circle.png"), :class => "employee-img", :alt => "user image" %>
       <div id="form">
-        <form action="">
+        <form action="index" >
           <select name="branch" id="branch-select">
-            <option value="" selected disabled>Select branch</option>
-            <option value="1">North</option>
-            <option value="2">South</option>
-            <option value="3">US</option>
-            <option value="4">UK</option>
-            <option value="5">West</option>
+            <option value="1">Mexico</option>
+            <option value="2">North</option>
+            <option value="3">South</option>
+            <option value="4">US</option>
+            <option value="5">UK</option>
+            <option value="6">West</option>
           </select>
-          <input placeholder="Private number" type="password">
+          <input name="private_number" type="password">
           <div class="buttons">
             <button type="submit">CHECK IN <i class="fas fa-chevron-up"></i></button>
             <button type="submit">CHECK OUT <i class="fas fa-chevron-down"></i></button>

@@ -17,6 +17,66 @@ color: #bdbebf;
 font-weight: 700;
 }
 
+
+.graphics_reports{
+  color:$textColor;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #2c38418c;
+  justify-content: space-around;
+}
+#titles_reports{
+  margin-top: 3%;
+  height: 50%;
+  font-size: 1.2rem;
+}
+
+.filters-reports{
+  text-align: center;
+  border-radius: 21px;
+  background-color: $darkBlue;
+  border: 0;
+  color: #54a39d;
+}
+
+#form_input{
+  input, select{
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #7fbca3;
+  }
+}
+
+#form_container{
+  input[type=submit]{
+    color: $textColor;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+  }
+}
+
+.results_reports{
+  font-family: "Nunito", sans-serif;
+  
+  margin-top: 30%;
+  font-size: 1rem;
+}
+
+.sides_results{
+  margin-top: 105%;
+}
+
+#table_container{
+  overflow-y: scroll;
+  height: 23rem;
+  overflow-x: hidden;
+}
+
 .card {
 max-width: 1440px;
 margin: 0 auto;

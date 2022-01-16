@@ -21,10 +21,10 @@ INSERT INTO branches (name, direction, created_at, updated_at) VALUES ("anexo","
 INSERT INTO branches (name, direction, created_at, updated_at) VALUES ("foranea","lomas amarillas #66 escobera","2022-01-05 08:30:00", "2022-01-05 08:30:00");
 INSERT INTO branches (name, direction, created_at, updated_at) VALUES ("juarez","lomas azules #105 san antonio","2022-01-05 08:30:00", "2022-01-05 08:30:00");
 
-INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 07:00:00","2022-01-05 08:00:00",11,"2022-01-05 08:30:00","2022-01-05 08:30:00");
-INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 08:00:00","2022-01-05 09:00:00",10,"2022-01-05 08:30:00","2022-01-05 08:30:00");
-INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 09:00:00","2022-01-05 10:00:00",12,"2022-01-05 08:30:00","2022-01-05 08:30:00");
-INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 10:00:00","2022-01-05 11:00:00",9,"2022-01-05 08:30:00","2022-01-05 08:30:00");
+INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-15 07:00:00","2022-01-05 08:00:00",11,"2022-01-05 08:30:00","2022-01-05 08:30:00");
+INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-15 08:00:00","2022-01-05 09:00:00",10,"2022-01-05 08:30:00","2022-01-05 08:30:00");
+INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-15 09:00:00","2022-01-05 10:00:00",12,"2022-01-05 08:30:00","2022-01-05 08:30:00");
+INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-15 10:00:00","2022-01-05 11:00:00",9,"2022-01-05 08:30:00","2022-01-05 08:30:00");
 
 -- INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 07:00:00","2022-01-05 08:00:00",11,"2022-01-05 08:30:00","2022-01-05 08:30:00");
 -- INSERT INTO checks (entrance, out, employee_id, created_at, updated_at) VALUES ("2022-01-05 08:00:00","2022-01-05 09:00:00",10,"2022-01-05 08:30:00","2022-01-05 08:30:00");
