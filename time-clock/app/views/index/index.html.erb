@@ -9,10 +9,9 @@
       </div>
       <%= link_to 'Home', '/' %>
       <%= link_to "Admin", "/users/sign_in" %>
-      
     </div>
   </header>
-<div class="content-grid content">
+  <div class="content-grid content">
     <div class="grid1-employee">
       <%= image_tag ("account_circle.png"), :class => "employee-img", :alt => "user image" %>
       <div id="form">
@@ -25,7 +24,7 @@
             <option value="5">UK</option>
             <option value="6">West</option>
           </select>
-          <input name="private_number" type="password">
+          <input name="private_number" type="password" placeholder="Private number">
           <div class="buttons">
             <button type="submit">CHECK IN <i class="fas fa-chevron-up"></i></button>
             <button type="submit">CHECK OUT <i class="fas fa-chevron-down"></i></button>
@@ -45,6 +44,5 @@
       </div>
     </div>
   </div>
-
 </div>
 <%= javascript_pack_tag 'timer-script' %>

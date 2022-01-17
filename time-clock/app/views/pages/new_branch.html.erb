@@ -1,28 +1,40 @@
-<center>
+<div class="card ">
+	<header id="header">
+		<div class="header-content">
+		<div class="dot">
+			<%= image_tag ("dot_image"), :class => "dot-img" %>
+		</div>
+		<div class="title">
+			<h1>Check in/out</h1>
+		</div>
+		<%= link_to 'Home', '/' %>
+		</div>
+	</header>
+    <center>
     <%= form_for @branch do |f|%>
-        <div>
-            <%= f.label :name %>
-            <%= f.text_field :name %>
-        </div>
+			<div class="field">
+				<%= f.label :name, :class => "label-left" %>
+				<%= f.text_field :name, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :direction %>
-            <%= f.text_field :direction %>
-        </div>
+			<div class="field">
+				<%= f.label :direction, :class => "label-left" %>
+				<%= f.text_field :direction, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :created_at %>
-            <%= f.text_field :created_at %>
-        </div>
+			<div class="field">
+				<%= f.label :created_at, :class => "label-left" %>
+				<%= f.text_field :created_at, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :updated_at %>
-            <%= f.text_field :updated_at %>
-        </div>
+			<div class="field">
+				<%= f.label :updated_at, :class => "label-left" %>
+				<%= f.text_field :updated_at, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.submit %>
-        </div>
-
+			<div class="actions">
+				<%= f.submit "Crate branch", :class => "submit-btn" %>
+			</div>
     <%end%>
-</center>
+		</center>
+</div>

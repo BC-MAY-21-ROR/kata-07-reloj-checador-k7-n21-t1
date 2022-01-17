@@ -1,42 +1,54 @@
-<center>
+<div class="card ">
+	<header id="header">
+		<div class="header-content">
+		<div class="dot">
+			<%= image_tag ("dot_image"), :class => "dot-img" %>
+		</div>
+		<div class="title">
+			<h1>Check in/out</h1>
+		</div>
+		<%= link_to 'Home', '/' %>
+		</div>
+	</header>
+    <center>
     <%= form_for @employee do |f|%>
-        <div>
-            <%= f.label :name %>
-            <%= f.text_field :name %>
-        </div>
+			<div class="field-left">
+				<%= f.label :name, :class => "label-left" %>
+				<%= f.text_field :name, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :position %>
-            <%= f.text_field :position %>
-        </div>
-        <div>
-            <%= f.label :email %>
-            <%= f.text_field :email %>
-        </div>
+			<div class="field-left">
+				<%= f.label :position, :class => "label-left" %>
+				<%= f.text_field :position, :class => "email_field" %>
+			</div>
+			<div class="field-left">
+				<%= f.label :email, :class => "label-left" %>
+				<%= f.text_field :email, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :active %>
-            <%= f.text_field :active %>
-        </div>
+			<div class="field-left">
+				<%= f.label :active, :class => "label-left" %>
+				<%= f.text_field :active, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :branch_id %>
-            <%= f.text_field :branch_id %>
-        </div>
+			<div class="field-left">
+				<%= f.label :branch_id, :class => "label-left" %>
+				<%= f.text_field :branch_id, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :created_at %>
-            <%= f.text_field :created_at %>
-        </div>
+			<div class="field-left">
+				<%= f.label :created_at, :class => "label-left" %>
+				<%= f.text_field :created_at, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.label :updated_at %>
-            <%= f.text_field :updated_at %>
-        </div>
+			<div class="field-left">
+				<%= f.label :updated_at, :class => "label-left" %>
+				<%= f.text_field :updated_at, :class => "email_field" %>
+			</div>
 
-        <div>
-            <%= f.submit %>
-        </div>
-
+			<div>
+				<%= f.submit %>
+			</div>
     <%end%>
-</center>
+		</center>
+</div>
