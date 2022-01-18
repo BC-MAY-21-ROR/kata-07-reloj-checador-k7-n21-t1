@@ -9,6 +9,8 @@
       </div>
       <%= link_to 'Home', '/' %>
       <%= link_to 'Reports', '/' %>
+      <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
+      
     </div>
   </header>
   <div class="content-nogrid content">

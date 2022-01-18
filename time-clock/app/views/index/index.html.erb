@@ -9,6 +9,9 @@
       </div>
       <%= link_to 'Home', '/' %>
       <%= link_to "Admin", "/users/sign_in" %>
+      <%if user_signed_in? %>
+        <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
+      <%end%>
     </div>
   </header>
   <div class="content-grid content">

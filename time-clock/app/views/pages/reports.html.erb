@@ -7,8 +7,9 @@
 			<div class="title">
 				<h1>Check in/out</h1>
 			</div>
-			<a href="/index.html">Home</a>
+			<%= link_to 'Home', '/' %>
 			<a href="#">Generate report</a>
+			<%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
 		</div>
 	</header>
 	<div id="titles_reports" class="graphics_reports">

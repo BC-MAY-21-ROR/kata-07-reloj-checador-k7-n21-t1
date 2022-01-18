@@ -434,8 +434,8 @@ select > option {
 }
 
 .alert {
-  color: #D24D57;
   display: block;
+  color: #D24D57;
   font-weight: 700;
   margin: 0 auto;
   max-width: 200px;
@@ -488,3 +488,17 @@ select > option {
   justify-content: center;
   margin-bottom: .3rem;
 }
+
+
+.button_to {
+  .devise-btn {
+    border: none;
+    background-color: transparent;
+    color: #bdbebf;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+

@@ -18,7 +18,7 @@
 
     <div class="field">
       <%= f.label :email %><br />
-      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "email_field", placeholder: "Email" %>
+      <%= f.email_field :email, autofocus: true, autocomplete: "off", class: "email_field", placeholder: "Email" %>
     </div>
 
     <div class="field signup">
@@ -26,12 +26,12 @@
       <% if @minimum_password_length %>
       <em class="em-text">(<%= @minimum_password_length %> characters minimum)</em>
       <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password", class: "email_field", placeholder: "Password" %>
+      <%= f.password_field :password, autocomplete: "off", class: "email_field", placeholder: "Password" %>
     </div>
 
     <div class="field signup">
       <%= f.label :password_confirmation %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "email_field", placeholder: "Password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "off", class: "email_field", placeholder: "Password" %>
     </div>
 
     <div class="actions">

@@ -8,6 +8,7 @@
       <h1>Check in/out</h1>
     </div>
     <%= link_to 'Home', '/' %>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
     </div>
   </header>
   <center>
