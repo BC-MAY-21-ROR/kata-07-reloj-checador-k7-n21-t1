@@ -1,0 +1,29 @@
+<div class="card">
+  <header id="header">
+    <div class="header-content">
+      <div class="dot">
+        <%= image_tag ("dot_image.png"), :class => "dot-img" %>
+      </div>
+      <div class="title">
+        <h1>Check in/out</h1>
+      </div>
+      <%= link_to 'Home', '/' %>
+    </div>
+  </header>
+  <h2 class="login_h2">Forgot your password?</h2>
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :email %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", :class => "email_field" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Send me reset password instructions", :class => "submit-btn" %>
+    </div>
+  <% end %>
+
+  <%= render "devise/shared/links" %>
+</div>

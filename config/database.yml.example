@@ -1,0 +1,49 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+//FOR DEVELOPMENT
+=======
+>>>>>>> c4cabd3 (backup with devise)
+=======
+>>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
+default: &default
+  adapter: sqlite3
+  user: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PW'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+  <<: *default
+  database: <%= ENV['DATABASE_DEVELOPMENT'] %>
+test:
+  <<: *default
+  database: <%= ENV['DATABASE_TEST'] %>
+
+production:
+  database: <%= ENV['DATABASE_URL'] %> 
+  database: <%= ENV['DATABASE_URL'] %>
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+//FOR PRODUCTION
+default: &default
+  adapter: postgresql
+  user: <%= ENV['DATABASE_USER'] %>
+  password: <%= ENV['DATABASE_PW'] %>
+  host: <%= ENV['DATABASE_HOST'] %>
+  port: <%= ENV['DATABASE_PORT'] %>
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+  <<: *default
+  database: <%= ENV['DATABASE_DEVELOPMENT'] %>
+test:
+  <<: *default
+  database: <%= ENV['DATABASE_TEST'] %>
+production:
+  database: <%= ENV['DATABASE_URL'] %>
+=======
+>>>>>>> c4cabd3 (backup with devise)
+=======
+>>>>>>> 132b374931ce7a2b848d49187dfa9c4bdefc3bda
