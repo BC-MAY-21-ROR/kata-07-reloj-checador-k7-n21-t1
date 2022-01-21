@@ -1,0 +1,46 @@
+<div class="card">
+	<header id="header">
+		<div class="header-content">
+			<div class="dot">
+				<%= image_tag ("dot_image.png"), :class => "dot-img" %>
+			</div>
+			<div class="title">
+				<h1>Check in/out</h1>
+			</div>
+			<%= link_to 'Home', '/' %>
+			<a href="#">Generate report</a>
+			<%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
+		</div>
+	</header>
+	<div id="titles_reports" class="graphics_reports">
+		<div>
+			Asistencias / dia 
+			<br>
+			<center><div class="results_reports sides_results"><%=@asists_day%></div> </center> 
+		</div>
+		<div>
+			<center>Tiempo medio de entrada / salida</center>
+			<br>
+			<center><div class="results_reports"><%= @prom_entrance %> / <%= @prom_out%></div></center> 
+		</div>
+		<div>
+			Ausencias / mes
+			<br>
+			<center><div class="results_reports sides_results"><%= @absences_month%></div> </center> 
+		</div>
+	</div>
+	<br>
+	<div id="form_container" class="graphics_reports">
+		<div>
+			<%= form_tag :action => 'reports' do%>
+				<span id="form_input">
+					<%= date_field_tag(:dia, value = Date.today)%>
+				</span>
+				<%= submit_tag 'Filtrar' %>
+				<span id="form_input">
+					<%= select_tag :mes, raw("<option value='01'>Enero</option><option value='02'>Febrero</option><option value='03'>Marzo</option><option value='04'>Abril</option><option value='05'>Mayo</option><option value='06'>Junio</option><option value='07'>Julio</option><option value='08'>Agosto</option><option value='09'>Septiembre</option><option value='10'>Octubre</option><option value='10'>Noviembre</option><option value='12'>Diciembre</option>") %>
+				</span>
+			<%end%>
+		</div>
+	</div>
+</div>

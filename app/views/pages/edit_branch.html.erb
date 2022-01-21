@@ -1,0 +1,41 @@
+<div class="card ">
+  <header id="header">
+    <div class="header-content">
+    <div class="dot">
+      <%= image_tag ("dot_image.png"), :class => "dot-img" %>
+    </div>
+    <div class="title">
+      <h1>Check in/out</h1>
+    </div>
+    <%= link_to 'Home', '/' %>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, :class => "devise-btn" %>
+    </div>
+  </header>
+  <center>
+  <%= form_for @branch do |f|%>
+    <div class="field">
+      <%= f.label :name, :class => "label-left" %>
+      <%= f.text_field :name, :class => "email_field" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :direction, :class => "label-left" %>
+      <%= f.text_field :direction, :class => "email_field" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :created_at, :class => "label-left" %>
+      <%= f.text_field :created_at, :class => "email_field" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :updated_at, :class => "label-left" %>
+      <%= f.text_field :updated_at, :class => "email_field" %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "Update branch", :class => "submit-btn" %>
+    </div>
+  <%end%>
+  </center>
+</div>
