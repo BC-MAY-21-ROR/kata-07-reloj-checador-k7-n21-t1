@@ -7,3 +7,7 @@ one:
 two:
   name: MyString
   direction: MyString
+
+power_plant:
+  name: Springfield Nuclear Power Plant
+  direction: Burns
