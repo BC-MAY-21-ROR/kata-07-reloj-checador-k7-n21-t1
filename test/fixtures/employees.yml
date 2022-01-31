@@ -13,3 +13,10 @@ two:
   email: MyString
   active: false
   branch: two
+
+homer:
+  name: Homer
+  position: Sys Admin
+  email: homer.simpson@gmail.com
+  active: true
+  branch: power_plant
